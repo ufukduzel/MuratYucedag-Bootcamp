@@ -122,6 +122,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -166,6 +167,12 @@
     <Content Include="Views\Default\Index.cshtml" />
     <Content Include="Views\Default\Index2.cshtml" />
     <Content Include="Views\Default\Index3.cshtml" />
+    <Content Include="Views\Shared\_AdminLayout.cshtml" />
+    <Content Include="Views\Test\Index.cshtml" />
+    <Content Include="Views\Shared\_NavbarLayout.cshtml" />
+    <Content Include="Views\Test\UserList.cshtml" />
+    <Content Include="Views\Test\NewUser.cshtml" />
+    <Content Include="Views\Test\ToDoList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
