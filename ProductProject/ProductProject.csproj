@@ -139,6 +139,19 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="web\css\flexslider.css" />
+    <Content Include="web\css\style.css" />
+    <Content Include="web\images\1.jpg" />
+    <Content Include="web\images\2.jpg" />
+    <Content Include="web\images\left.png" />
+    <Content Include="web\images\person.jpg" />
+    <Content Include="web\images\person.png" />
+    <Content Include="web\images\right.png" />
+    <Content Include="web\index.html" />
+    <Content Include="web\js\jquery-1.11.1.min.js" />
+    <Content Include="web\js\jquery.circlechart.js" />
+    <Content Include="web\js\jquery.flexslider.js" />
+    <Content Include="web\w3layouts-License.txt" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -173,6 +186,7 @@
     <Content Include="Views\Test\UserList.cshtml" />
     <Content Include="Views\Test\NewUser.cshtml" />
     <Content Include="Views\Test\ToDoList.cshtml" />
+    <Content Include="web\images\Thumbs.db" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
