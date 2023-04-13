@@ -8,17 +8,17 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{A6EA1D26-8A3C-439F-A1CE-392F18605A33}</ProjectGuid>
+    <ProjectGuid>{17188C45-13E8-4249-A3A0-57E0C77D8D13}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ProductProject</RootNamespace>
-    <AssemblyName>ProductProject</AssemblyName>
+    <RootNamespace>ResumeProject</RootNamespace>
+    <AssemblyName>ResumeProject</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44397</IISExpressSSLPort>
+    <IISExpressSSLPort>44338</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -120,9 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -139,20 +137,6 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="SQLQuery1-27.03.2023.sql" />
-    <Content Include="web\css\flexslider.css" />
-    <Content Include="web\css\style.css" />
-    <Content Include="web\images\1.jpg" />
-    <Content Include="web\images\2.jpg" />
-    <Content Include="web\images\left.png" />
-    <Content Include="web\images\person.jpg" />
-    <Content Include="web\images\person.png" />
-    <Content Include="web\images\right.png" />
-    <Content Include="web\index.html" />
-    <Content Include="web\js\jquery-1.11.1.min.js" />
-    <Content Include="web\js\jquery.circlechart.js" />
-    <Content Include="web\js\jquery.flexslider.js" />
-    <Content Include="web\w3layouts-License.txt" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -178,16 +162,6 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Default\Index.cshtml" />
-    <Content Include="Views\Default\Index2.cshtml" />
-    <Content Include="Views\Default\Index3.cshtml" />
-    <Content Include="Views\Shared\_AdminLayout.cshtml" />
-    <Content Include="Views\Test\Index.cshtml" />
-    <Content Include="Views\Shared\_NavbarLayout.cshtml" />
-    <Content Include="Views\Test\UserList.cshtml" />
-    <Content Include="Views\Test\NewUser.cshtml" />
-    <Content Include="Views\Test\ToDoList.cshtml" />
-    <Content Include="web\images\Thumbs.db" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -222,9 +196,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>14045</DevelopmentServerPort>
+          <DevelopmentServerPort>20590</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44397/</IISUrl>
+          <IISUrl>https://localhost:44338/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
