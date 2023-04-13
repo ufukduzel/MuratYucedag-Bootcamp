@@ -140,6 +140,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="SQLQuery1-27.03.2023.sql" />
+    <Content Include="SQLQuery2-29.03.2023.sql" />
     <Content Include="web\css\flexslider.css" />
     <Content Include="web\css\style.css" />
     <Content Include="web\images\1.jpg" />
