@@ -1,0 +1,25 @@
+﻿@model ResumeProject.Models.TblSkill
+
+@{
+    ViewBag.Title = "UpdateSkill";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yetenek Güncelleme Sayfası</h2>
+
+<form method="post">
+    <label>Yetenek ID</label>
+    @Html.TextBoxFor(x => x.SkillID) @*Bu şekilde tasarımı kötü gelir.*@
+    @*model List<> gönderilmediği zaman foreach olmadan direk kullanılır.*@
+    <br />
+    <label>Yetenek Başlığı</label>
+    @Html.TextBoxFor(x => x.SkillTitle)
+    <br />
+    <label>Yetenek İkonu</label>
+    @Html.TextBoxFor(x => x.Skillicon)
+    <br />
+    <label>Yetenek Açıklaması</label>
+    @Html.TextBoxFor(x => x.SkillDescription)
+    <br />
+    <button class="btn btn-primary">Verileri Güncelle</button>
+</form>
