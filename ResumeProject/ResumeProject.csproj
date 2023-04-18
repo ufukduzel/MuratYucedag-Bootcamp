@@ -183,6 +183,7 @@
     <Content Include="Content\sidebar-01\js\jquery.min.js" />
     <Content Include="Content\sidebar-01\js\main.js" />
     <Content Include="Content\sidebar-01\js\popper.js" />
+    <Content Include="DbResume-03.04.2023-SchemaDataScript.sql" />
     <Content Include="DbResume-29.03.2023-SchemaDataScript.sql" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
