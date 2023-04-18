@@ -9,17 +9,17 @@
 
 <form method="post">
     <label>Yetenek ID</label>
-    @Html.TextBoxFor(x => x.SkillID) @*Bu şekilde tasarımı kötü gelir.*@
+    @Html.TextBoxFor(x => x.SkillID, new { @class = "form-control" }) @*Bu şekilde tasarımı kötü gelir.*@
     @*model List<> gönderilmediği zaman foreach olmadan direk kullanılır.*@
     <br />
     <label>Yetenek Başlığı</label>
-    @Html.TextBoxFor(x => x.SkillTitle)
+    @Html.TextBoxFor(x => x.SkillTitle, new { @class = "form-control" })
     <br />
     <label>Yetenek İkonu</label>
-    @Html.TextBoxFor(x => x.Skillicon)
+    @Html.TextBoxFor(x => x.Skillicon, new { @class = "form-control" })
     <br />
     <label>Yetenek Açıklaması</label>
-    @Html.TextBoxFor(x => x.SkillDescription)
+    @Html.TextBoxFor(x => x.SkillDescription, new { @class = "form-control" })
     <br />
     <button class="btn btn-primary">Verileri Güncelle</button>
 </form>

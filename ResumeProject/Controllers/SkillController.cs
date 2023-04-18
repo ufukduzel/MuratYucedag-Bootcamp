@@ -67,10 +67,25 @@ namespace ResumeProject.Controllers
         public ActionResult UpdateSkill(int id) // Html.Helpers yapısıyla
         {
             var value = db.TblSkill.Find(id);
-            return View(value); 
+            return View(value);
             // id 5 ise value içinde id si 5 olan verinin bütün sütunları olur
         }
 
+        // RouteConfig de id olarak tanımlandığı için x yazılması hata verir
+        //public ActionResult UpdateSkill(int x)
+        //{ var value = db.TblSkill.Find(x); ... }
+
         // HttpPut genel olarak api lerde kullanılır
+
+        [HttpPost]
+        public ActionResult UpdateSkill(TblSkill p)
+        { // Breakpoint
+            var value = db.TblSkill.Find(p.SkillID);
+            value.SkillTitle = p.SkillTitle;
+            value.Skillicon = p.Skillicon;
+            value.SkillDescription = p.SkillDescription;
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
