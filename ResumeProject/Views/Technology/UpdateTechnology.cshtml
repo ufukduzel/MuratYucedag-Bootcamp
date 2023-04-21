@@ -1,0 +1,24 @@
+﻿@model ResumeProject.Models.TblTechnology
+@* Html Helper ları kullanabilmek için model tanımlıyoruz. *@
+
+@{
+    ViewBag.Title = "UpdateTechnology";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Teknoloji Güncelleme Sayfası</h2>
+
+<form method="post">
+    @Html.HiddenFor(x => x.TechnologyID)
+    @*HiddenFor arkaplanda çalışır.*@
+    @*ID gözükmeyecek ama ID ye göre güncelleme yapacağımız için böyle yaptık.*@
+    @*HiddenFor ID yi komple arkaplana alır, yani adres çubuğunda ID nin gözükmemesini sağlar ama sayfa kaynağında hidden tipinde value kısmında ID değeri görünür*@
+    Hangi verinin güncelleneceğini sorunsuz bir şekilde gösterebilmek için ID değerini bir şekilde sayfaya taşımamız gerekiyor. Ama kullanıcı ID yi görmemeli, çünkü görmesi aslında bir güvenlik açığıdır. Kullanıcının ID yi görmemesi için HiddenFor kullanıyoruz.
+    <label>Teknoloji Adı</label>
+    @Html.TextBoxFor(x => x.TechnologyITitle, new { @class = "form-control" })
+    <br />
+    <label>Teknoloji Değeri</label>
+    @Html.TextBoxFor(x => x.TechnologyIValue, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-success">Verileri Güncelle</button>
+</form>

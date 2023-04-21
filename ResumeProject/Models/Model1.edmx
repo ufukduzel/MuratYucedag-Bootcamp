@@ -12,7 +12,7 @@
           <Property Name="ContactID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="NameSurname" Type="nvarchar" MaxLength="50" />
           <Property Name="Mail" Type="nvarchar" MaxLength="50" />
-          <Property Name="Subject" Type="nvarchar" MaxLength="50" />
+          <Property Name="Subject" Type="int" />
           <Property Name="Message" Type="nvarchar" MaxLength="1000" />
           <Property Name="Date" Type="datetime" />
         </EntityType>
@@ -125,7 +125,7 @@
           <Property Name="ContactID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="NameSurname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Subject" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Subject" Type="Int32" />
           <Property Name="Message" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
           <Property Name="Date" Type="DateTime" Precision="3" />
         </EntityType>

@@ -1,0 +1,20 @@
+﻿@model ResumeProject.Models.TblTechnology
+@*Üzerinde çalışacağımız entity i seçiyoruz.*@
+
+@{
+    ViewBag.Title = "AddTechnology";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yeni Teknoloji Ekleme Sayfası</h2>
+
+@*Form metodu olmadan bu action ı tetikleyemeyiz, o yüzden mutlaka form metot ekliyoruz veya tetikleyebilmek için a etiketi vermemiz gerekiyor*@
+<form method="post">
+    <label>Teknoloji Adı</label>
+    @Html.TextBoxFor(x => x.TechnologyITitle, new { @class = "form-control" })
+    <br />
+    <label>Teknoloji Değeri</label>
+    @Html.TextBoxFor(x => x.TechnologyIValue, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-primary">Verileri Kaydet</button>
+</form>

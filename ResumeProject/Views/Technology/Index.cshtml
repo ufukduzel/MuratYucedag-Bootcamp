@@ -1,0 +1,37 @@
+﻿@* @model List<ResumeProject.Models.TblTechnology>
+    Her ikisi de kullanılabilir. *@
+
+@using ResumeProject.Models
+@model List<TblTechnology>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int count = 0; // 1,2,3,4,5,6,7,8,9... şeklinde giden sayısal düzenleme yapmak için count kullanacağız
+}
+
+<h2>Teknoloji Listesi</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Başlık</th>
+        <th>Değer</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @*Yukarıdaki model ile buradaki Model birbiriyle eşleşiyor, yukarıdaki model kaldırılırsa burada item dedikten sonra hiçbir veri gelmez.*@
+    @foreach (var item in Model)
+    {
+        count++; // ID değeri olmayan sıralama numarası
+        <tr>
+            @* <td>@item.TechnologyID</td> *@
+            <td>@count</td>
+            <td>@item.TechnologyITitle</td>
+            <td>@item.TechnologyIValue</td>
+            <td><a href="/Technology/DeleteTechnology/@item.TechnologyID" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="/Technology/UpdateTechnology/@item.TechnologyID" class="btn btn-outline-success">Güncelle</a></td>
+        </tr>
+    }
+</table>
+<a href="/Technology/AddTechnology/" class="btn btn-outline-primary">Yeni Teknoloji Girişi</a>
