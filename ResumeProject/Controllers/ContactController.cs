@@ -19,8 +19,22 @@ namespace ResumeProject.Controllers
             var values = db.TblContact.ToList();
             return View(values);
         }
+
+        public ActionResult DeleteMessage(int id)
+        {
+            var values = db.TblContact.Find(id);
+            db.TblContact.Remove(values);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
+//Kategori - Crud
+//Proje
+//Profile
+//ilişkili tabloların mvc'de kullanımı, prosedür kullanımı
+//istatistiksel entity framework metotları
+
 
 // ÖDEVLER
 // Kategori - Crud (Kategori tablosunun tüm crud işlemleri)
