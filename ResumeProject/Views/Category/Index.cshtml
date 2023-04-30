@@ -1,0 +1,32 @@
+﻿@using ResumeProject.Models
+@*Models veritabanı değil Entities i tuttuğumuz klasördür.*@
+@model List<TblCategory>
+@*Küçük model entity e erişim sağlamama olanak sağlayan komut, entity üzerinden çekmemi sağlayan komut. Aşağıdaki büyük Model property olarak tanımlanır, burada TblCategory i tutuyor.*@
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Kategori Listesi</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Kategori Adı</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+        <th>Mesaj Türü</th> @*Kategoriye göre mesajların listesi*@
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.CategoryID</td>
+            <td>@item.CategoryName</td>
+            <td><a href="/Category/DeleteCategory/@item.CategoryID" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="/Category/UpdateCategory/@item.CategoryID" class="btn btn-outline-success">Güncelle</a></td>
+            <td><a href="/Category/#/@item.CategoryID" class="btn btn-outline-dark">Mesaj Türü</a></td>
+        </tr>
+    }
+</table>
+<a href="/Category/AddCategory" class="btn btn-outline-primary">Yeni Kategori Girişi</a>

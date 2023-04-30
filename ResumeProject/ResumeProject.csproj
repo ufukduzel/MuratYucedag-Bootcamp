@@ -350,10 +350,11 @@
     <Content Include="Views\Technology\AddTechnology.cshtml" />
     <Content Include="Views\Technology\UpdateTechnology.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Category\Index.cshtml" />
+    <Content Include="Views\Category\AddCategory.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Category\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
