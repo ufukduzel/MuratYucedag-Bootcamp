@@ -132,6 +132,7 @@
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SkillController.cs" />
+    <Compile Include="Controllers\StatisticController.cs" />
     <Compile Include="Controllers\TechnologyController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -352,6 +353,9 @@
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Category\Index.cshtml" />
     <Content Include="Views\Category\AddCategory.cshtml" />
+    <Content Include="Views\Category\UpdateCategory.cshtml" />
+    <Content Include="Views\Category\GetMessageBySubject.cshtml" />
+    <Content Include="Views\Statistic\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

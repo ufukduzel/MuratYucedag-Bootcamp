@@ -66,12 +66,20 @@ namespace ResumeProject.Controllers
         [HttpPost] // Parametre olarak Category tablosundan bir nesne kullandık
         public ActionResult UpdateCategory(TblCategory p)
         {
-            var values = db.TblCategory.Find(p.CategoryID);
+            var values = db.TblCategory.Find(p.CategoryID); // index de hiddenfor olmazsa bu işlem ID yi bulamadığı için gerçekleşmiyor
             // p den sonra nokta koyunca Category tablosunun property leri gelir
             values.CategoryName = p.CategoryName;
             // veritabanındaki values değeri içindeki CategoryName i bizim yolladığımız p sınıfı içindeki CategoryName ile değiştir diyoruz
             db.SaveChanges();
             return RedirectToAction("Index");
+        }
+
+        // ID ye göre mesaj getirme
+        public ActionResult GetMessageBySubject(int id)
+        {
+            // SQL eşdeğeri -> Select * From TblContact Where Subject=1
+            var values = db.TblContact.Where(x => x.Subject == id).ToList();
+            return View(values);
         }
     }
 }
