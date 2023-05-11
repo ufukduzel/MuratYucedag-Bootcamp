@@ -250,6 +250,7 @@
     <Content Include="DbResume-23.04.03-SchemaData.sql" />
     <Content Include="DbResume-23.03.29-SchemaData.sql" />
     <Content Include="DbResume-23.04.05-SchemaData.sql" />
+    <Content Include="DbResume-23.04.11-SchemaData.sql" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -395,6 +396,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="SQLQuery3-23.04.11.sql" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
