@@ -25,7 +25,8 @@
     <div class="container">
         @*<h2>Cards with Contextual Classes</h2>*@
         <div class="card">
-            <div class="card-body">Yetenek Sayısı: @ViewBag.skillCount</div>
+            @*<div class="card-body">Yetenek Sayısı: @ViewBag.skillCount</div>*@
+            <div class="card-body">Proje Sayısı: @ViewBag.countProjeTalebi</div>
         </div>
         <br>
         <div class="card bg-primary text-white">
@@ -53,11 +54,11 @@
         </div>
         <br>
         <div class="card bg-dark text-white">
-            <div class="card-body">Dark card</div>
+            <div class="card-body">3 Nolu ID: @ViewBag.GetBy3ID</div>
         </div>
         <br>
         <div class="card bg-light text-dark">
-            <div class="card-body">Light card</div>
+            <div class="card-body">En Yüksek Yetenek Puanı: @ViewBag.maxTechnologyValue</div>
         </div>
     </div>
 
