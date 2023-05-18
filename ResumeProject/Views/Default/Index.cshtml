@@ -11,184 +11,19 @@ Author URL: http://w3layouts.com
 <!doctype html>
 <html lang="en">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>UI Portfolio - Personal Category Bootstrap Responsive Website Template - Home : W3Layouts</title>
-
-    <!-- google-fonts -->
-    <link href="//fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;800&display=swap" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- //google-fonts -->
-    <!-- Template CSS Style link -->
-    <link rel="stylesheet" href="~/Content/starter/assets/css/style-liberty.css">
-
-</head>
+@Html.Action("PartialHeader")
 
 <body>
 
 
     <!--header-->
-    <header id="site-header" class="fixed-top">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg stroke">
-                <h1>
-                    <a class="navbar-brand" href="index.html">
-                        <i class="fab fa-asymmetrik"></i> UI Portfolio
-                    </a>
-                </h1>
-                <!-- if logo is image enable this
-                <a class="navbar-brand" href="#index.html">
-                    <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-                </a> -->
-                <button class="navbar-toggler collapsed bg-gradient" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
-                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav ms-lg-auto align-items-center">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="services.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-
-                        <!--/right-btn-->
-                        <div class="header-btn mx-2">
-                            <a class="btn btn-style btn-primary mr-lg-5" href="contact.html"> Hire Me</a>
-                        </div>
-                        <!--/right-btn-->
-
-                    </ul>
-                </div>
-
-                <!-- search -->
-                <ul class="cd-header-buttons px-lg-2">
-                    <li>
-                        <a class="cd-search-trigger" href="#cd-search">
-                            <span></span>
-                        </a>
-                    </li>
-                </ul>
-                <div id="cd-search" class="cd-search">
-                    <form action="#url" method="post">
-                        <input name="Search" type="search" placeholder="Click enter after typing...">
-                    </form>
-                </div>
-                <!-- //search -->
-                <!-- toggle switch for light and dark theme -->
-                <div class="cont-ser-position">
-                    <nav class="navigation">
-                        <div class="theme-switch-wrapper">
-                            <label class="theme-switch" for="checkbox">
-                                <input type="checkbox" id="checkbox">
-                                <div class="mode-container">
-                                    <i class="gg-sun"></i>
-                                    <i class="gg-moon"></i>
-                                </div>
-                            </label>
-                        </div>
-                    </nav>
-                </div>
-                <!-- //toggle switch for light and dark theme -->
-            </nav>
-        </div>
-    </header>
+    @Html.Action("PartialNavbar")
     <!--//header-->
     <!-- banner section -->
-    <section id="home" class="w3l-banner pt-5">
-        <div class="container pt-lg-5 pt-md-4">
-            <div class="row pt-lg-5 pt-4">
-                <div class="col-lg-7 banner-info-grid pt-lg-0 pt-5">
-                    <h1 class="mb-3">Hi, I'm John Watson</h1>
-                    <h3 class="mb-4"> <span class="typed-text"></span><span class="cursor">&nbsp</span> </h3>
-                    <p>
-                        I love Graphic design and Photography and have been working on my portfolio since 2016. I Can
-                        give your business a new Creative start right away!
-                    </p>
-
-                    <a class="btn btn-primary btn-style mt-5 me-2" href="contact.html"> Hire Me </a>
-                    <a class="btn btn-style transparent-btn mt-5" href="#portfolio"> My Portfolio </a>
-
-                </div>
-                <div class="col-lg-5 text-lg-end my-image mt-lg-0 mt-4">
-                    <img src="~/Content/starter/assets/images/banner.png" class="img-fluid" />
-                </div>
-            </div>
-        </div>
-    </section>
+    @Html.Action("PartialFeature")
     <!-- //banner section -->
     <!-- About Section-->
-    <section class="w3l-about py-5" id="about">
-        <div class="container py-md-5 py-2">
-            <div class="row w3l-row">
-                <div class="col-lg-5 my-image pe-lg-5 mb-lg-0 mb-md-5 mb-4">
-                    <img src="~/Content/starter/assets/images/about.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="col-lg-7 w3l-about-info px-lg-4 align-center">
-                    <h6 class="w3l-title-small mb-1">My Biography</h6>
-                    <h3 class="w3l-title-main mb-2">A Lead UI Designer & Web Developer based in UK</h3>
-                    <p class="my-4 pe-lg-5">I love Graphic design and Photography and have been working on my portfolio since 2016. I Can give your business a new Creative start right away! Contact me and we will discuss your projects!</p>
-                    <div class="my-info mt-4">
-                        <div class="single-info">
-                            <span>Name:</span>
-                            <p>John Watson</p>
-                        </div>
-                        <div class="single-info">
-                            <span>From:</span>
-                            <p>London, UK</p>
-                        </div>
-                        <div class="single-info">
-                            <span>Email:</span>
-                            <p><a href="mailto:example@mail.com">example@mail.com</a></p>
-                        </div>
-                        <div class="single-info">
-                            <span>Phone:</span>
-                            <p><a href="tel:+21 234 567 8901">+21 234 567 8901</a></p>
-                        </div>
-                    </div>
-
-                    <ul class="follow-social mt-lg-5 mt-4">
-                        <li>
-                            <h5 class="me-md-3">Follow me on </h5>
-                        </li>
-
-                        <li>
-                            <a href="https://in.linkedin.com/company/w3layouts"><span class="fab fa-behance"></span></a>
-                        </li>
-
-                        <li>
-                            <a href="https://in.linkedin.com/company/w3layouts"><span class="fab fa-linkedin-in"></span></a>
-                        </li>
-
-                        <li>
-                            <a href="https://www.facebook.com/w3layouts/">
-                                <span class="fab fa-facebook-f"></span>
-                            </a>
-                        </li>
-
-                        <li><a href="https://twitter.com/W3layouts"><span class="fab fa-twitter"></span></a></li>
-
-                    </ul>
-                    <div class="w3l-btn">
-                        <a href="contact.html" class="btn btn-style btn-primary mt-lg-5 mt-4 me-md-2">Hire me</a>
-                        <a href="#download-cv" class="btn btn-style btn-secondary mt-lg-5 mt-4">Download CV</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    @Html.Action("PartialAbout")
     <!-- //About Section-->
     <!-- Services Section -->
     <section class="about-section py-5">
@@ -561,6 +396,9 @@ Author URL: http://w3layouts.com
         <div class="container py-4">
             <div class="row footer-grids">
                 <div class="col-lg-6 copyright text-lg-start text-center align-center">
+
+                    @Html.Action("Partial1")
+
                     <p>© 2022 UI Portfolio. All Rights Reserved | Design by <a href="http://w3layouts.com/"> W3layouts</a> </p>
                 </div>
                 <div class="col-lg-6 text-lg-end text-center mt-lg-0 mt-4">
@@ -583,7 +421,8 @@ Author URL: http://w3layouts.com
     <button onclick="topFunction()" id="movetop" title="Go to top">
         <span class="fas fa-level-up-alt" aria-hidden="true"></span>
     </button>
-    <script>// When the user scrolls down 20px from the top of the document, show the button
+    <script>
+    // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function () {
             scrollFunction()
         };
@@ -619,7 +458,8 @@ Author URL: http://w3layouts.com
     <!--/owlcarousel-->
     <script src="~/Content/starter/assets/js/owl.carousel.js"></script>
     <!-- //brands-->
-    <script>$(document).ready(function() {
+    <script>
+    $(document).ready(function () {
             $("#owl-demo").owlCarousel({
                 loop: true,
                 autoplay: true,
@@ -644,10 +484,11 @@ Author URL: http://w3layouts.com
         })</script>
     <!-- //brands-->
     <!-- /typig-text-->
-    <script>const typedTextSpan = document.querySelector(".typed-text");
+    <script>
+    const typedTextSpan = document.querySelector(".typed-text");
         const cursorSpan = document.querySelector(".cursor");
 
-        const textArray = ["Web Designer", "Web Developer", "Photographer", "Freelancer"];
+        const textArray = ["Asp.Net Core", "Web Developer", "Fotoğrafçı", "Freelancer"];
         const typingDelay = 200;
         const erasingDelay = 10;
         const newTextDelay = 100; // Delay between current and next text
@@ -694,7 +535,8 @@ Author URL: http://w3layouts.com
     <script src="~/Content/starter/assets/js/jquery.prettyPhoto.js"></script>
     <!-- //jQuery-Photo-filter-lightbox-portfolio-plugin -->
     <!-- MENU-JS -->
-    <script>$(window).on("scroll", function () {
+    <script>
+    $(window).on("scroll", function () {
             var scroll = $(window).scrollTop();
 
             if (scroll >= 80) {
@@ -720,7 +562,8 @@ Author URL: http://w3layouts.com
         });</script>
     <!-- //MENU-JS -->
     <!-- disable body scroll which navbar is in active -->
-    <script>$(function () {
+    <script>
+    $(function () {
             $('.navbar-toggler').click(function () {
                 $('body').toggleClass('noscroll');
             })
