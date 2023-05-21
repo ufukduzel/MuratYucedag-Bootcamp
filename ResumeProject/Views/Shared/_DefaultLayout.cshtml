@@ -1,0 +1,34 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="en">
+
+@Html.Action("PartialHeader", "Default")
+@* Header içinde CSS dosyaları vardır. *@
+@* Partial dosyaları farklı Controller içinde olduğu için bunu belirtmezsek hata verir. *@
+
+<body>
+
+    @Html.Action("PartialNavbar", "Default")
+    @* Navbar içinde Üst Menü vardır. *@
+
+    @*@Html.Action("PartialCounter", "Default")*@
+    @*@Html.Action("PartialFeature", "Default")*@
+    @*<h1>Merhaba</h1>*@
+
+    @RenderBody()
+
+    @Html.Action("PartialFooter", "Default")
+
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+    </button>
+
+    @Html.Action("PartialScripts", "Default")
+    @* Scripts içinde Script dosyaları vardır. *@
+</body>
+
+</html>

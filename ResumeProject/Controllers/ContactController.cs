@@ -27,6 +27,42 @@ namespace ResumeProject.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+
+        [HttpGet]
+        public ActionResult SendMessage()
+        {
+            List<SelectListItem> values = (from x in db.TblCategory.ToList()
+                                           select new SelectListItem
+                                           {
+                                               Text = x.CategoryName,
+                                               Value = x.CategoryID.ToString()
+                                           }).ToList();
+            ViewBag.v = values; // v değişkeni buradaki bütün listenin ögelerini alır
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult SendMessage(TblContact p)
+        {
+            // DateTime.Parse() metodun içindeki ifadeyi tarih zaman formatına dönüştürür
+            // DateTime.Now.ToShortDateString() şu anın kısa tarih bilgisini verir
+            p.Date = DateTime.Parse(DateTime.Now.ToShortDateString());
+            db.TblContact.Add(p);
+            db.SaveChanges();
+            return RedirectToAction("Index", "Default");
+        }
+        // SweetAlert2
+        // Asp.Net Core Dropdownlist
+
+        public PartialViewResult PartialMap()
+        {
+            return PartialView();
+        }
+
+        public PartialViewResult PartialFeature()
+        {
+            return PartialView();
+        }
     }
 }
 //Kategori - Crud
@@ -50,3 +86,17 @@ namespace ResumeProject.Controllers
 // İlişkili tabloların Mvc'de kullanımı (detaylı olarak)
 // Prosedür kullanımı (Mvc'de)
 // İstatistiksel entity framework metotları (istatistiksel veriler için)
+
+
+// ÖDEVLER - 2023.04.14
+// Projede temanın orijinalinde yer alan
+// Hakkında ve Hizmetler sayfası (default kısmında) tamamlanacak
+// Her ikisi için de yeni Controller olmalı
+// Çünkü içerikleri kapsamlı
+// Hakkında kısmında video eklenmiş
+// Hakkında kısmı için projeye bir tane referanslar tablosu eklenebilir
+
+// Admin Panelinde Sol Menüde Eklenecekler
+// Feature değeri gibi veritabanından çekilecek değerler
+// Öne çıkan kısmı, hakkında kısmı, neler yapıyorum kısmı gibi
+// Ana sayfadaki kısımlar sol menüye eklensin
