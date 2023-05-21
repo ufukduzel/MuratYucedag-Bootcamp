@@ -254,6 +254,7 @@
     <Content Include="DbResume-23.03.29-SchemaData.sql" />
     <Content Include="DbResume-23.04.05-SchemaData.sql" />
     <Content Include="DbResume-23.04.11-SchemaData.sql" />
+    <Content Include="DbResume-23.04.14-SchemaData.sql" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
